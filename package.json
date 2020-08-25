@@ -6,9 +6,9 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/src/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
     "lint": "eslint ./src ./test --ext .ts",
-    "lint:fix": "eslint ./src ./test --ext .ts --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:fix": "eslint ./src ./test --ext .ts --fix"
   },
   "keywords": [
     "node.js",
@@ -23,6 +23,7 @@
     "@typescript-eslint/eslint-plugin": "^3.10.0",
     "@typescript-eslint/parser": "^3.10.0",
     "eslint": "^7.7.0",
+    "ts-node-dev": "^1.0.0-pre.60",
     "typescript": "^4.0.2"
   },
   "dependencies": {
